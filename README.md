@@ -14,7 +14,7 @@ In the hyper-competitive OTT streaming landscape, retaining subscribers and opti
 ---
 
 ## 🗂️ Project Repository Structure
-
+```text
 ├── charts/                   # Exported executive visualizations & trend curves
 │   ├── 01_cohort_retention.png
 │   ├── 02_genre_completion.png
@@ -28,8 +28,7 @@ In the hyper-competitive OTT streaming landscape, retaining subscribers and opti
 ├── analysis.py               # Core data processing, aggregation, and analysis script
 ├── build_notebook.py         # Automated notebook generation script
 └── OTT_Content_Engagement_Analytics.ipynb  # Interactive execution notebook
-
-
+```
 ---
 
 ## 📊 Key Analytical Findings & Business Insights
@@ -64,14 +63,17 @@ In the hyper-competitive OTT streaming landscape, retaining subscribers and opti
 To run the analysis locally and regenerate the telemetry datasets and charts:
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/debadeepTalukdar/ott-analytics-project.git
    cd ott-analytics-project
-   
+   ```
 2. Run the analysis script:
+   ```bash
    python analysis.py
-   
+   ```
 3. Explore the interactive workflow in Jupyter Notebook:
+   ```bash
    jupyter notebook OTT_Content_Engagement_Analytics.ipynb
-   
+   ```   
 ---
 *Created as part of data analytics and business strategy portfolio development.*
