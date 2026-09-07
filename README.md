@@ -14,3 +14,64 @@ In the hyper-competitive OTT streaming landscape, retaining subscribers and opti
 ---
 
 ## 🗂️ Project Repository Structure
+
+├── charts/                   # Exported executive visualizations & trend curves
+│   ├── 01_cohort_retention.png
+│   ├── 02_genre_completion.png
+│   ├── 03_recommendation_lift.png
+│   ├── 04_tier_engagement.png
+│   └── 05_device_completion.png
+├── data/                     # Simulated relational datasets
+│   ├── users.csv             # User demographics, tenure, and subscription tiers
+│   ├── content.csv           # Catalog metadata, genres, and production types
+│   └── watch_sessions.csv    # Granular session telemetry and playback metrics
+├── analysis.py               # Core data processing, aggregation, and analysis script
+├── build_notebook.py         # Automated notebook generation script
+└── OTT_Content_Engagement_Analytics.ipynb  # Interactive execution notebook
+
+
+---
+
+## 📊 Key Analytical Findings & Business Insights
+
+### 1. Cohort Retention Dynamics
+* **Observation:** Tracking user cohorts by signup month reveals a natural engagement decay curve, with a sharp stabilization point around Day 14.
+* **Business Recommendation:** Rather than deploying blanket win-back marketing campaigns across all churned users, target automated retention triggers specifically between Days 7 and 10 where the retention slope is steepest.
+
+### 2. Content Portfolio Optimization (Sports vs. Originals)
+* **Observation:** Sports programming dominates initial reach and session volume, whereas platform Originals drive significantly higher completion depth and binge rates.
+* **Business Recommendation:** Adopt a hybrid content investment strategy—allocate top-of-funnel acquisition budget to live sports rights while optimizing production pipelines for high-retention narrative Originals.
+
+### 3. Personalization Lift & Algorithmic Impact
+* **Observation:** Content consumed via platform recommendations demonstrated a **23.7% completion-rate lift** over organically browsed titles.
+* **Caveat & Next Steps:** While correlation is strong, true causality requires rigorous A/B testing to rule out self-selection bias (i.e., highly engaged users may browse recommendations more frequently).
+
+### 4. Subscription Tier Monetization Behavior
+* **Observation:** Ad-supported tiers yield high daily active usage but lower session duration compared to Premium ad-free tiers.
+* **Business Recommendation:** Optimize ad-pod placement dynamically based on user tenure to maximize eCPM without inducing premature churn.
+
+---
+
+## 🛠️ Technical Stack & Tools
+* **Data Processing & Analysis:** Python (`Pandas`, `NumPy`)
+* **Statistical Modeling & Simulation:** Custom telemetry generators modeling tenure-based decay and interaction effects.
+* **Data Visualization:** Matplotlib / Seaborn for executive-ready static exports.
+* **Business Intelligence Framework:** Styled following executive dashboard principles (Power BI design patterns).
+
+---
+
+## 🚀 Getting Started & Replication
+To run the analysis locally and regenerate the telemetry datasets and charts:
+
+1. Clone the repository:
+   git clone https://github.com/debadeepTalukdar/ott-analytics-project.git
+   cd ott-analytics-project
+   
+2. Run the analysis script:
+   python analysis.py
+   
+3. Explore the interactive workflow in Jupyter Notebook:
+   jupyter notebook OTT_Content_Engagement_Analytics.ipynb
+   
+---
+*Created as part of data analytics and business strategy portfolio development.*
